@@ -1,0 +1,63 @@
+#header img {
+  width: 4.5rem;
+}
+#main .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(70%);
+}
+
+#carousel {
+  position: relative;
+}
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+#header a {
+  color: antiquewhite;
+}
+
+.text-turismo {
+  font-weight: 900 !important;
+}
+.btn-danger {
+  background-color: green;
+  border: none;
+}
+
+.navbar-toggler-icon {
+  color: white;
+  width: auto;
+}
+
+#footer {
+  background-image: radial-gradient(
+    circle at 43.84% 120.44%,
+    #515ed8 0,
+    #4957d6 25%,
+    #4d42d4 50%,
+    #123cd2 75%,
+    #0037d0 100%
+  );
+}
+#footer a {
+  color: white;
+}
+
+.row {
+  text-align: center;
+}
+#speakers img {
+  height: 20rem;
+  object-fit: cover;
+}
