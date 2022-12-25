@@ -1,3 +1,6 @@
+body {
+  margin: 3rem;
+}
 #header img {
   width: 4.5rem;
 }
@@ -61,12 +64,8 @@
   object-fit: cover;
 }
 
-#que-hacer {
-  background-color: rgb(127, 182, 255);
-}
-
 #que-hacer p {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #que-hacer h5 {
@@ -80,4 +79,16 @@
 
 #precio a {
   color: red;
+}
+#de-dia h5{
+  color: #4957d6;
+}
+#de-noche {
+  background-color: black;
+}
+#de-noche h2 {
+  color: yellow;
+}
+#de-noche p {
+  color: white;
 }
