@@ -1,8 +1,21 @@
 body {
-  margin: 3rem;
+  margin: 0;
+  background-color: rgba(248, 237, 237, 0.986);
 }
+
 #header img {
   width: 4.5rem;
+}
+#iconos img:hover {
+  transform: scale(1.15);
+}
+#iconos img {
+  width: 8rem;
+  border-radius: 50%;
+}
+#iconos #title {
+  color: white;
+  background-color: black;
 }
 #main .carousel-inner img {
   max-height: 70vh;
@@ -80,7 +93,7 @@ body {
 #precio a {
   color: red;
 }
-#de-dia h5{
+#de-dia h5 {
   color: #4957d6;
 }
 #de-noche {
@@ -91,4 +104,16 @@ body {
 }
 #de-noche p {
   color: white;
+}
+#hoteles p {
+  font-size: 1.2rem;
+}
+#hoteles button:hover {
+  background-color: black;
+}
+#hoteles h5 {
+  color: #0037d0;
+}
+#hostales p {
+  font-size: 1.2rem;
 }
