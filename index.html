@@ -20,11 +20,11 @@
 
     <title>Gu&iacute;a Tur&iacute;stica de San Andr&eacute;s</title>
   </head>
-  <body data-spy="scroll" data-targe="#navar">
+  <body data-spy="scroll" data-target="#navbar" data-offset="98">
     <!--Header-->
     <nav
       id="header"
-      class="navbar navbar-expand-lg navbar-danger bg-danger sticky-top"
+      class="navbar navbar-expand-lg navbar-dark bg-danger sticky-top"
     >
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -47,8 +47,8 @@
 
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-turismo" href="#main">Inicio</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#main">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#que-hacer">Que hacer</a>
@@ -114,7 +114,12 @@
                     información turística útil para tu viaje.
                   </p>
                   <a href="#" class="btn btn-outline-light">como llegar</a>
-                  <button type="button" class="btn btn-success">
+                  <button
+                    type="button"
+                    class="btn btn-success"
+                    data-toggle="modal"
+                    data-target="#modalcompra"
+                  >
                     comprar tickets
                   </button>
                 </div>
@@ -284,46 +289,58 @@
         <div class="row">
           <div class="col-12 col-lg-2 mb-3 mt-3">
             <a class="navbar-brand" href="#general"
-              ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDZZMj1eYU_bmzJJbNx8ziwCJIon9lsMz9vEKXrbUVUOZ2dYpjRMUiqm3gjEy0lTvUSs&usqp=CAU"
-                alt="logo de informacion general"
-                title="INFORMACION GENERAL"
-            /></a>
+              ><abbr
+                data-toggle="tooltip"
+                class="top-5"
+                title="informacion general"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPDZZMj1eYU_bmzJJbNx8ziwCJIon9lsMz9vEKXrbUVUOZ2dYpjRMUiqm3gjEy0lTvUSs&usqp=CAU"
+                  alt="logo de informacion general"
+                /> </abbr
+            ></a>
           </div>
           <div class="col-12 col-lg-2 mb-3 mt-3">
             <a href="#hoteles"
-              ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6E6n_eZb758Tydb5LLYGoizF5muEHYH0fA&usqp=CAU"
-                alt="logo de hoteles"
-            /></a>
+              ><abbr
+                data-toggle="tooltip"
+                class="top-5"
+                title="mejores hosteles"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6E6n_eZb758Tydb5LLYGoizF5muEHYH0fA&usqp=CAU"
+                  alt="logo de hoteles" /></abbr
+            ></a>
           </div>
           <div class="col-12 col-lg-2 mb-3 mt-3">
             <a href="#que-hacer"
-              ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvaBrEmdXXFzhpUXF-XzCDx8-hGrQ5yKp5q4M7b_qrkDfyPMvdIQlWU5qKblejNXrhNOA&usqp=CAU"
-                alt="logo de que hacer"
-            /></a>
+              ><abbr data-toggle="tooltip" class="top-5" title="turismo"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvaBrEmdXXFzhpUXF-XzCDx8-hGrQ5yKp5q4M7b_qrkDfyPMvdIQlWU5qKblejNXrhNOA&usqp=CAU"
+                  alt="logo de que hacer" /></abbr
+            ></a>
           </div>
           <div class="col-12 col-lg-2 mb-3 mt-3">
             <a href="#llegar"
-              ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3TnlDwxGfwbIdf3CTbRaguBMFgLRmNgJd95fBPNyDydi5GlKiw9M9TBNI6iwatNtrfs&usqp=CAU"
-                alt="logo de como llegar"
-            /></a>
+              ><abbr data-toggle="tooltip" class="top-5" title="como llegar"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN3TnlDwxGfwbIdf3CTbRaguBMFgLRmNgJd95fBPNyDydi5GlKiw9M9TBNI6iwatNtrfs&usqp=CAU"
+                  alt="logo de como llegar" /></abbr
+            ></a>
           </div>
           <div class="col-12 col-lg-2 mb-3 mt-3">
             <a href="#comer"
-              ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWUlo9oHUIDUnhhamlZqipg7R_7kIGz32tPw&usqp=CAU"
-                alt="logo de que comer"
-            /></a>
+              ><abbr data-toggle="tooltip" class="top-5" title="que comer"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWUlo9oHUIDUnhhamlZqipg7R_7kIGz32tPw&usqp=CAU"
+                  alt="logo de que comer" /></abbr
+            ></a>
           </div>
           <div class="col-12 col-lg-2 mb-5 mt-3">
             <a href="#mapa"
-              ><img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tU1H-Jdwf4ek7VlbHjeN-peMNpu71ThZ3A&usqp=CAU"
-                alt="logo del mapa"
-            /></a>
+              ><abbr data-toggle="tooltip" class="top-5" title="mapa"
+                ><img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8tU1H-Jdwf4ek7VlbHjeN-peMNpu71ThZ3A&usqp=CAU"
+                  alt="logo del mapa" /></abbr
+            ></a>
           </div>
         </div>
       </div>
@@ -2309,7 +2326,7 @@
         </div>
       </div>
     </section>
-    <!-- /Conviértete en orador -->
+    <!-- /experiencia-->
     <!--footer-->
     <footer id="footer" class="mt-5 mb-5">
       <div class="container">
@@ -2323,6 +2340,43 @@
       </div>
     </footer>
     <!--/footer-->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modalcompra"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -2340,5 +2394,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
   </body>
 </html>
