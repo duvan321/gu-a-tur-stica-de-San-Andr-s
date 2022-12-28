@@ -1,5 +1,4 @@
 body {
-  margin: 3rem;
   background-color: rgba(248, 237, 237, 0.986);
 }
 
@@ -16,6 +15,13 @@ body {
 #iconos #title {
   color: white;
   background-color: black;
+}
+#conocer img {
+  max-width: 100%;
+}
+#conocer {
+  background-color: rgb(92, 92, 126) !important;
+  color: white;
 }
 #main .carousel-inner img {
   max-height: 70vh;
@@ -125,4 +131,15 @@ body {
 }
 #general {
   background-color: rgb(209, 228, 228);
+}
+#comer {
+  background-color: rgb(227, 236, 236);
+}
+#experiencia .btn-experiencia {
+  background-color: #dc3545 !important;
+  color: white;
+}
+
+#experiencia .btn-experiencia:hover {
+  background-color: #c23c49 !important;
 }
