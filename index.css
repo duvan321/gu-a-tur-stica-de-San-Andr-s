@@ -5,6 +5,18 @@ body {
 #header img {
   width: 4.5rem;
 }
+.text-comprar{
+  color: #97c93e !important
+}
+.btn-comprar {
+  background-color: #97c93e;
+  color: white;
+}
+
+.btn-comprar:hover {
+  background-color: #82ad36;
+  color: white;
+}
 #iconos img:hover {
   transform: scale(1.15);
 }
